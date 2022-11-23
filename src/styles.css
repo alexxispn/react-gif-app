@@ -12,7 +12,7 @@ input {
     background-color: white;
     border-radius: 5px;
     border: 1px solid rgb(97, 32, 158);
-    color: #C9D1C7;
+    color: #0D1117;
     font-size: 1.2rem;
     outline: none;
     padding: 10px 15px;
@@ -61,4 +61,14 @@ h3 {
 
 .card img {
     width: 100%;
+}
+
+button {
+    background-color: #0D1117;
+    border: 1px solid #C9D1D9;
+    border-radius: 0.5rem;
+    color: #C9D1D9;
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 10px 15px;
 }
