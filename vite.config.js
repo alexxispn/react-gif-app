@@ -1,8 +1,13 @@
-import { defineConfig } from 'vite'
+/// <reference types="vitest" />
+import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/react-gif-app/',
-  plugins: [react()]
+    base: '/react-gif-app/',
+    plugins: [react()],
+    test: {
+        globals: true,
+        environment: 'jsdom',
+        setupFiles: './tests/setup.js',
+    },
 })
